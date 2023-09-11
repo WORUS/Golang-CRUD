@@ -1,14 +1,14 @@
 package todo
 
 type TodoList struct {
-	Id          int    `json:"Id"`
+	Id          int    `json:"id"`
 	Title       string `json:"title"`
 	Description string `json:"description"`
 }
 
 type UserList struct {
 	Id     int
-	Userid int
+	UserId int
 	ListId int
 }
 
@@ -22,5 +22,5 @@ type TodoItem struct {
 type ListItem struct {
 	Id     int
 	List   int
-	itemId int
+	ItemId int
 }
