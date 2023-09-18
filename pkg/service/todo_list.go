@@ -17,3 +17,13 @@ func (s *TodoListService) Create(userId int, list todo.TodoList) (int, error) {
 	return s.repo.Create(userId, list)
 
 }
+
+func (s *TodoListService) GetALL(userId int) ([]todo.TodoList, error) {
+	return s.repo.GetALL(userId)
+
+}
+
+func (s *TodoListService) GetById(userId, listId int) (todo.TodoList, error) {
+	return s.repo.GetById(userId, listId)
+
+}
