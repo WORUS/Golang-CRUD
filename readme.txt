@@ -10,3 +10,6 @@ migrate -path database/migration/ -database "postgresql://username:secretkey@loc
 
 
 update schema_migrations set version='000001', dirty=false
+
+
+REST API
